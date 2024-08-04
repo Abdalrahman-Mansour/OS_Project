@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Algorithims.GainController">
+   <children>
+      <Label alignment="CENTER" layoutX="209.0" layoutY="17.0" prefHeight="40.0" prefWidth="154.0" text="GainChart">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="SH" layoutX="233.0" layoutY="283.0" mnemonicParsing="false" onAction="#Show" prefHeight="25.0" prefWidth="111.0" text="Show">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="S" layoutX="58.0" layoutY="182.0" prefHeight="79.0" prefWidth="468.0">
+         <content>
+            <HBox fx:id="HB" prefHeight="100.0" prefWidth="453.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="577.0" prefWidth="736.0" style="-fx-background-color: #e5b983;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Algorithims.Controller">
+   <children>
+      <Label layoutX="6.0" layoutY="474.0" prefHeight="24.0" prefWidth="165.0" style="-fx-background-color: #C5E65C;" text="Enter The time Quantum">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="time" layoutX="178.0" layoutY="474.0" prefHeight="25.0" prefWidth="69.0" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="474.0" />
+      <Button fx:id="addPro" defaultButton="true" layoutX="615.0" layoutY="459.0" mnemonicParsing="false" onAction="#AddPro" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #0ab9c6;" text="ADDProcess">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="ROR" layoutX="110.0" layoutY="421.0" mnemonicParsing="false" onAction="#ROR" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #030564;" text="RondRobin" textFill="#fcfcf2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="FCF" layoutX="118.0" layoutY="371.0" mnemonicParsing="false" onAction="#FCF" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #030564;" text="FCFS" textFill="#f5f0f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="TV" layoutY="146.0" prefHeight="197.0" prefWidth="744.0">
+        <columns>
+          <TableColumn fx:id="PID" prefWidth="56.0" text="#Proces" />
+          <TableColumn fx:id="AT" prefWidth="86.00001525878906" text="Arivaltime" />
+            <TableColumn fx:id="BT" prefWidth="65.0" text="BurstTime" />
+            <TableColumn fx:id="PR" prefWidth="64.0" text="Priority" />
+            <TableColumn fx:id="RE" prefWidth="67.0" text="Repeat" />
+            <TableColumn fx:id="DE" prefWidth="70.0" text="Deadline" />
+            <TableColumn fx:id="FT" prefWidth="81.0" text="Finished time" />
+            <TableColumn fx:id="TA" prefWidth="59.0" text="TA" />
+            <TableColumn fx:id="WT" prefWidth="67.0" text="Wait time" />
+            <TableColumn fx:id="WTA" prefWidth="128.0" text="Weight TA" />
+        </columns>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TableView>
+      <TextField fx:id="AvgTA" layoutX="618.0" layoutY="390.0" prefHeight="25.0" prefWidth="81.0" />
+      <Label layoutX="618.0" layoutY="361.0" prefHeight="17.0" prefWidth="81.0" style="-fx-background-color: #C5E65C;" text="AvgTA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="361.0" prefHeight="20.0" prefWidth="81.0" style="-fx-background-color: #C5E65C;" text="AvgWA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="361.0" prefHeight="20.0" prefWidth="94.0" style="-fx-background-color: #C5E65C;" text="AvgWeightTA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="SRR" layoutX="235.0" layoutY="371.0" mnemonicParsing="false" onAction="#SRRJF" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #030564;" text="SRJF" textFill="#fffefc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="AvgWA" layoutX="504.0" layoutY="390.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="WTAA" layoutX="393.0" layoutY="390.0" prefHeight="25.0" prefWidth="81.0" />
+      <Button layoutY="371.0" mnemonicParsing="false" onAction="#EPP" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #030564;" text="EP" textFill="#f6fffd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="GA" defaultButton="true" layoutX="498.0" layoutY="459.0" mnemonicParsing="false" onAction="#GA" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #030564;" text="GainChart" textFill="#fbfcfa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="208.0" layoutY="25.0" prefHeight="62.0" prefWidth="337.0" text="Algorithims Schudling ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="SF" layoutX="282.0" layoutY="421.0" mnemonicParsing="false" onAction="#SF" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #030564;" text="SJF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="EPN" layoutX="-6.0" layoutY="421.0" mnemonicParsing="false" onAction="#EPN" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #050364;" text="EP/NON" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
